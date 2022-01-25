@@ -1,0 +1,28 @@
+! ------------------------------------------------------------------------------
+! Copyright (C) 2020-2021 Victor Rodriguez <vicrerdgz@gmail.com>
+! Everyone is permitted to copy and distribute copies of this file under GNU-GPL3
+!
+! Tokyo color scheme
+! ------------------------------------------------------------------------------
+
+*background: #1E232F
+*foreground: #C7C5BE
+*cursorColor: #C7C5BE
+
+*color0:  #1A1E28
+*color1:  #F29E74
+*color2:  #D5FF80
+*color3:  #FAC761
+*color4:  #749C9F
+*color5:  #A878DD
+*color6:  #2ac3de
+*color7:  #C7C5BE
+
+*color8:  #292B3C
+*color9:  #F28779
+*color10:  #9cb380
+*color11:  #e9c46a
+*color12:  #7dcfff
+*color13:  #bb9af7
+*color14:  #7aa2f7
+*color15:  #C7C5BE
