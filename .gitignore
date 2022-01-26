@@ -5,3 +5,4 @@ __pycache__
 Session.vim
 rofi.bak
 config.py.bak
+core/bar.py.bak

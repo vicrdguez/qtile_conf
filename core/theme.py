@@ -2,7 +2,7 @@ from os import path
 import json
 from libqtile.log_utils import logger
 
-from path import qtile_path
+from core.path import qtile_path
 
 
 def load():

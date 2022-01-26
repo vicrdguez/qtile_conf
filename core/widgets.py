@@ -1,5 +1,5 @@
 from libqtile import widget
-from theme import colors
+from core.theme import colors
 from libqtile.log_utils import logger
 
 # Get the icons at https://www.nerdfonts.com/cheat-sheet (you need a Nerd Font)
@@ -79,7 +79,7 @@ def workspaces():
     ]
 
 
-def init_widgets():
+def init_widgets(systray=True):
     """Generate a copy of the configured widgets for multiple screens."""
     widgets = [
         icon(fg='yellow', text='  ', fontsize=30),  # Icon nf-linux-archlinux
@@ -106,15 +106,22 @@ def init_widgets():
         widget.Clock(**base(), format='%b %d - %H:%M '),
         separator(),
         # powerline('background', 'yellow'),
+    ]
+    systray_widget = [
         widget.Systray(background=colors['background'], padding=0),
         separator(),
         widget.CurrentLayoutIcon(**base(fg='red'), scale=0.65),
     ]
+    if systray == True:
+        widgets.extend(systray_widget)
+    else:
+        widgets.append(widget.CurrentLayoutIcon(**base(fg='red'), scale=0.65))
+
     return widgets
 
 
 primary_widgets = init_widgets()
-secondary_widgets = init_widgets()
+secondary_widgets = init_widgets(False)
 
 widget_defaults = {
     'font': 'Iosevka',

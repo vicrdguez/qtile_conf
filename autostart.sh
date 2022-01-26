@@ -20,7 +20,9 @@ getcolors
 # Kill if already running
 killall -9 xsettingsd dunst xfce4-power-manager picom
 
-picom --experimental-backends --config ~/.config/qtile/picom.conf &
+# Makes qtile unable to start
+#picom --experimental-backends --config ~/.config/qtile/picom.conf &
+bspcomp &
 
 dunst \
 -geom "280x50-10+42" -frame_width "1" -font "Iosevka Custom 9" \
@@ -37,7 +39,6 @@ fi
 
 # Enable power management
 xfce4-power-manager &
-
 flameshot &
 #nitrogen --restore &
 ~/.fehbg

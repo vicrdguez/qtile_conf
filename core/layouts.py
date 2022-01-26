@@ -1,6 +1,6 @@
 from libqtile import layout
 from libqtile.config import Match
-from theme import colors
+from core.theme import colors
 from libqtile.log_utils import logger
 
 logger.warning("layouts")

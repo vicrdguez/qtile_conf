@@ -1,6 +1,6 @@
 from libqtile.config import Drag, Click
 from libqtile.command import lazy
-from keys import mod
+from core.keybindings import mod
 from libqtile.log_utils import logger
 
 logger.warning("mouse")

@@ -196,10 +196,10 @@ keys = [
         desc="Lower volume"
         ),
     Key([], "XF86MonBrightnessUp",
-        lazy.spawn("xbacklight +10")
+        lazy.spawn("xbacklight -inc 10")
         ),
     Key([], "XF86MonBrightnessDown",
-        lazy.spawn("xbacklight -10")
+        lazy.spawn("xbacklight -dec 10")
         ),
     # Key([mod], "p",
     #     lazy.spawn("bwmenu"), #Bitwarden with rofi
@@ -207,9 +207,9 @@ keys = [
     #     ),
 ]
 
-# keys.extend([
-#     Key([mod], "F1",
-#         lazy.spawn("sh -c 'echo \"" + show_keys() + "\" | rofi -dmenu -i -mesg \"Keyboard shortcuts\"'"),
-#         desc="Print keyboard bindings"
-#         ),
-# ])
+keys.extend([
+    Key([mod], "F1",
+        lazy.spawn("sh -c 'echo \"" + show_keys() + "\" | rofi -dmenu -i -mesg \"Keyboard shortcuts\"'"),
+        desc="Print keyboard bindings"
+        ),
+])
