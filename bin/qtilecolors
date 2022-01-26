@@ -29,7 +29,7 @@ getcolors () {
 	ALTWHITE="$(xrdb -query | grep 'color15:'| awk '{print $NF}')"
 }
 
-bspbar () {
+qtile-bar () {
 	cat > $DIR/colors.json <<- EOF	
 {
     "background": [
@@ -84,7 +84,7 @@ bspbar () {
 EOF
 }
 
-bspterm () {
+qtile-term () {
 	cat > "$DIR"/alacritty/colors.yml <<- _EOF_
 		## Colors configuration
 		colors:
@@ -117,7 +117,7 @@ bspterm () {
 	_EOF_
 }
 
-bsprofi () {
+qtile-rofi () {
 	cat > $DIR/rofi/themes/colors.rasi <<- EOF	
 	* {
 		background:			${BACKGROUND};
@@ -125,7 +125,7 @@ bsprofi () {
 		selected:			${BLUE};
 		highlight:			${YELLOW};
 		urgent:				${RED};
-		on:					${GREEN};
+		on:				${GREEN};
 		off:				${RED};
 	}
 	EOF
@@ -133,9 +133,9 @@ bsprofi () {
 
 main () {
 	getcolors
-	bspbar
-	bspterm
-	bsprofi
+	qtile-bar
+	qtile-term
+	qtile-rofi
 }
 
 main
