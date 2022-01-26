@@ -1,4 +1,4 @@
-A qtile configuration made to work with [Archcraft](https://archcraft.io/) themes.
+A [qtile](http://www.qtile.org/) configuration made to work with [Archcraft](https://archcraft.io/) themes.
 
 Includes:
 - Rofi scripts with theming
