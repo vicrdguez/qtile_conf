@@ -3,3 +3,5 @@ config_.py
 .vscode/settings.json
 __pycache__
 Session.vim
+rofi.bak
+config.py.bak
