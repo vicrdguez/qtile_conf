@@ -1,7 +1,10 @@
 from libqtile import widget
 from theme import colors
+from libqtile.log_utils import logger
 
 # Get the icons at https://www.nerdfonts.com/cheat-sheet (you need a Nerd Font)
+
+logger.warning("widgets")
 
 
 def base(fg='foreground', bg='background'):

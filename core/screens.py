@@ -1,9 +1,10 @@
 from libqtile.config import Screen
 from libqtile import bar
-# from libqtile.log_utils import logger
+from libqtile.log_utils import logger
 from widgets import primary_widgets, secondary_widgets
 # import subprocess
 
+logger.warning("screens")
 
 def status_bar(widgets, size=24):
     return bar.Bar(widgets, size, opacity=1)

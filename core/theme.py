@@ -14,5 +14,5 @@ def load():
             return json.load(f)
 
 
-if __name__ == "core.theme":
-    colors = load()
+# if __name__ == "core.theme":
+colors = load()

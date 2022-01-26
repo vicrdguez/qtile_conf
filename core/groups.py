@@ -2,6 +2,9 @@ from libqtile.config import Key, Group, Match
 from libqtile.command import lazy
 from keys import mod, keys
 
+from libqtile.log_utils import logger
+
+logger.warning("grousp")
 
 
 groups = [

@@ -1,9 +1,9 @@
 from libqtile.config import Key
 from libqtile.command import lazy
 from libqtile.utils import guess_terminal
-from core.path import qtile_path
+from libqtile.log_utils import logger
 
-from os import path
+logger.warning("keybindings")
 
 mod = "mod4"
 terminal = guess_terminal()
@@ -83,7 +83,7 @@ keys = [
         lazy.spawn(".config/qtile/rofi/bin/themes"),
         desc="Change Qtile themes"
         ),
-    # Switch focus to specific monitor 
+    # Switch focus to specific monitor
     Key([mod], "e",
         lazy.to_screen(0),
         desc='Keyboard focus to monitor 1'

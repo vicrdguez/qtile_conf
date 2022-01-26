@@ -1,5 +1,8 @@
 from libqtile import widget
 from theme import colors
+from libqtile.log_utils import logger
+
+logger.warning("bar")
 
 
 def base(fg='text', bg='dark'):
